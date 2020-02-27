@@ -9,6 +9,49 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/c17851759423ce151b9e/test_coverage)](https://codeclimate.com/github/hideokamoto/serverless-lambda-nestjs/test_coverage)
 [![Build Status](https://travis-ci.org/hideokamoto/serverless-lambda-nestjs.svg?branch=master)](https://travis-ci.org/hideokamoto/serverless-lambda-nestjs)
 
+## Usage
+
+Add it into your Nestjs with AWS Lambda application
+
+```bash
+$ npm install -S serverless-lambda-nestjs
+```
+
+Wrap your Nestjs application by the package.
+
+```typescript
+import { APIGatewayProxyHandler } from 'aws-lambda';
+import { ServerlessNestjsApplicationFactory } from 'serverless-lambda-nestjs';
+// YOUR Nestjs application root module
+import { AppModule } from './app.module';
+
+export const handler: APIGatewayProxyHandler = async (event, context) => {
+  const app = new ServerlessNestjsApplicationFactory<AppModule>(
+    AppModule,
+  );
+  const result = await app.run(event, context);
+  return result;
+};
+
+
+export const handler: APIGatewayProxyHandler = async (event, context) => {
+  const app = new ServerlessNestjsApplicationFactory<AppModule>(
+    AppModule,
+    {
+        // NestFactory.create's option object
+        cors: true,
+    },
+    app => {
+      // Call additional API from NestFactory.create result
+      app.enableCors();
+      return app;
+    },
+  );
+  const result = await app.run(event, context);
+  return result;
+};
+```
+
 
 ## OGP
 
