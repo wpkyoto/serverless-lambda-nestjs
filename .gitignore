@@ -1,0 +1,8 @@
+node_modules/
+.DS_Store
+.envrc
+coverage/
+.idea/
+dist/
+examples/
+.rpt2_cache/
