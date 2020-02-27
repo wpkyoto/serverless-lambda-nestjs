@@ -4,6 +4,7 @@ import { Server } from 'http'
 import { ExpressAdapter } from '@nestjs/platform-express'
 import * as serverless from 'aws-serverless-express'
 import express from 'express'
+import 'reflect-metadata'
 import { APIGatewayProxyEvent, Context, APIGatewayEvent } from 'aws-lambda'
 
 let cachedServer: Server
