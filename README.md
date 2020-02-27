@@ -1,15 +1,13 @@
-# TypeScript Package template
-
-GitHub Template repository to create a npm package by using TypeScript.
+# Serverless AWS Lambda Nestjs Adapter
 
 ## Badges
 
-[![NPM](https://nodei.co/npm/MY_REPO_NAME.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/MY_REPO_NAME/)  
-[![npm version](https://badge.fury.io/js/MY_REPO_NAME.svg)](https://badge.fury.io/js/MY_REPO_NAME)
+[![NPM](https://nodei.co/npm/serverless-lambda-nestjs.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/serverless-lambda-nestjs/)  
+[![npm version](https://badge.fury.io/js/serverless-lambda-nestjs.svg)](https://badge.fury.io/js/serverless-lambda-nestjs)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Maintainability](https://api.codeclimate.com/v1/badges/c17851759423ce151b9e/maintainability)](https://codeclimate.com/github/hideokamoto/MY_REPO_NAME/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/c17851759423ce151b9e/test_coverage)](https://codeclimate.com/github/hideokamoto/MY_REPO_NAME/test_coverage)
-[![Build Status](https://travis-ci.org/hideokamoto/MY_REPO_NAME.svg?branch=master)](https://travis-ci.org/hideokamoto/MY_REPO_NAME)
+[![Maintainability](https://api.codeclimate.com/v1/badges/c17851759423ce151b9e/maintainability)](https://codeclimate.com/github/hideokamoto/serverless-lambda-nestjs/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/c17851759423ce151b9e/test_coverage)](https://codeclimate.com/github/hideokamoto/serverless-lambda-nestjs/test_coverage)
+[![Build Status](https://travis-ci.org/hideokamoto/serverless-lambda-nestjs.svg?branch=master)](https://travis-ci.org/hideokamoto/serverless-lambda-nestjs)
 
 
 ## OGP
@@ -68,8 +66,8 @@ $ git commit -m "<type>[optional scope]: <description>
 
 ```bash
 // clone
-$ git clone git@github.com:hideokamoto/MY_REPO_NAME.git
-$ cd MY_REPO_NAME
+$ git clone git@github.com:hideokamoto/serverless-lambda-nestjs.git
+$ cd serverless-lambda-nestjs
 
 // setup
 $ yarn

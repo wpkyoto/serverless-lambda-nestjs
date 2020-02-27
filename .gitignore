@@ -6,3 +6,4 @@ coverage/
 dist/
 examples/
 .rpt2_cache/
+yarn-error.log
