@@ -670,7 +670,7 @@
     webpack "4.41.5"
     webpack-node-externals "1.7.2"
 
-"@nestjs/common@^6.10.14":
+"@nestjs/common@^6.10.14", "@nestjs/common@^6.11.8":
   version "6.11.8"
   resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-6.11.8.tgz#2c7acb2aa312f111b39bedb8015891a7b6916834"
   integrity sha512-Tnd0Uikrthv2Y2RVTEZvA8f9P2HE+G31tfq1tA7fNLz1af7YeU/gMBtvDlemStMKUOx26/aSP2IRCvKeYwRCFQ==
@@ -680,7 +680,7 @@
     tslib "1.10.0"
     uuid "3.4.0"
 
-"@nestjs/core@^6.10.14":
+"@nestjs/core@^6.10.14", "@nestjs/core@^6.11.8":
   version "6.11.8"
   resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-6.11.8.tgz#9c149d4aaf49fc94f0a61a58e9661b9aacd13cd7"
   integrity sha512-QXsik+f0voaWmkMZhX3VDWB+q4jBBXwCJqJurK47h7ksTKJAcpHxV0SVOOrbWoZK0aHSMl3KMU/JNYL/p0mwNw==
@@ -693,7 +693,7 @@
     tslib "1.10.0"
     uuid "3.4.0"
 
-"@nestjs/platform-express@^6.10.14":
+"@nestjs/platform-express@^6.10.14", "@nestjs/platform-express@^6.11.8":
   version "6.11.8"
   resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-6.11.8.tgz#5444b92d9d31842457bab5da85d4d8c39f90f7dc"
   integrity sha512-nLyZEOAAUSxHX2lL3fuDAjoE1iaFJphFYCx4H09JwScYnurOYYCB3VaXqAoeib4JS1LIGglqHxirjTvNOBXAcA==
@@ -1774,6 +1774,14 @@ aws-sdk@^2.628.0:
     uuid "3.3.2"
     xml2js "0.4.19"
 
+aws-serverless-express@^3.3.6:
+  version "3.3.6"
+  resolved "https://registry.yarnpkg.com/aws-serverless-express/-/aws-serverless-express-3.3.6.tgz#5fb35c23af3d6e18a6bebdb4397d20dfdcc0a828"
+  integrity sha512-VTn8YQpPpMAEdMeGjyaSygy7Rc0057C9MUjeZION0NBqmwTyphpu9Tc5DCHRNF4qNFQ9x1xcOte6OXKzJvvDhw==
+  dependencies:
+    binary-case "^1.0.0"
+    type-is "^1.6.16"
+
 aws-sign2@~0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/aws-sign2/-/aws-sign2-0.7.0.tgz#b46e890934a9591f2d2f6f86d7e6a9f1b3fe76a8"
@@ -1877,6 +1885,11 @@ bignumber.js@^9.0.0:
   version "9.0.0"
   resolved "https://registry.yarnpkg.com/bignumber.js/-/bignumber.js-9.0.0.tgz#805880f84a329b5eac6e7cb6f8274b6d82bdf075"
   integrity sha512-t/OYhhJ2SD+YGBQcjY8GzzDHEk9f3nerxjtfa6tlMXfe7frs/WozhvCNoGvpM0P3bNf3Gq5ZRMlGr5f3r4/N8A==
+
+binary-case@^1.0.0:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/binary-case/-/binary-case-1.1.4.tgz#d687104d59e38f2b9e658d3a58936963c59ab931"
+  integrity sha512-9Kq8m6NZTAgy05Ryuh7U3Qc4/ujLQU1AZ5vMw4cr3igTdi5itZC6kCNrRr2X8NzPiDn2oUIFTfa71DKMnue/Zg==
 
 binary-extensions@^1.0.0:
   version "1.13.1"
@@ -3728,7 +3741,7 @@ expect@^24.9.0:
     jest-message-util "^24.9.0"
     jest-regex-util "^24.9.0"
 
-express@4.17.1:
+express@4.17.1, express@^4.17.1:
   version "4.17.1"
   resolved "https://registry.yarnpkg.com/express/-/express-4.17.1.tgz#4491fc38605cf51f8629d39c2b5d026f98a4c134"
   integrity sha512-mHJ9O79RqluphRrcw2X/GTh3k9tVv8YcoyY4Kkh4WDMUYKRZUq0h1o0w2rrrxBqM7VoeUVqgb27xlEMXTnYt4g==
@@ -8050,6 +8063,18 @@ serve-static@1.14.1:
     parseurl "~1.3.3"
     send "0.17.1"
 
+serverless-lambda-nestjs@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/serverless-lambda-nestjs/-/serverless-lambda-nestjs-0.0.1.tgz#c849027e64ed330786491fcfbd1e3306b336c2ce"
+  integrity sha512-x+2gtsEyegr6p/IaSJBCHLLhayoxrjP4A6gzg/tzVoRhQJcpbngXmjDD3H6pqU11t/2YaK8f0alfz6PuMkwj+A==
+  dependencies:
+    "@nestjs/common" "^6.11.8"
+    "@nestjs/core" "^6.11.8"
+    "@nestjs/platform-express" "^6.11.8"
+    aws-serverless-express "^3.3.6"
+    express "^4.17.1"
+    reflect-metadata "^0.1.13"
+
 serverless-layers@^2.0.3-alpha:
   version "2.0.3-alpha"
   resolved "https://registry.yarnpkg.com/serverless-layers/-/serverless-layers-2.0.3-alpha.tgz#ab5f0c6fad474577f93fd323bf77ea56cdaf28e0"
@@ -9089,7 +9114,7 @@ type-fest@^0.8.1:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.8.1.tgz#09e249ebde851d3b1e48d27c105444667f17b83d"
   integrity sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==
 
-type-is@^1.6.4, type-is@~1.6.17, type-is@~1.6.18:
+type-is@^1.6.16, type-is@^1.6.4, type-is@~1.6.17, type-is@~1.6.18:
   version "1.6.18"
   resolved "https://registry.yarnpkg.com/type-is/-/type-is-1.6.18.tgz#4e552cd05df09467dcbc4ef739de89f2cf37c131"
   integrity sha512-TkRKr9sUTxEH8MdfuCSP7VizJyzRNMjj2J2do2Jr3Kym598JVdEksuzPQCnlFPW4ky9Q+iA+ma9BGm06XQBy8g==

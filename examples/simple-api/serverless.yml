@@ -3,7 +3,7 @@ service: serverless-nestjs-api
 
 custom:
   stage:  ${opt:stage, self:provider.stage}
-  deploymentBucket: serverless.${self:provider.region}.wp-kyoto.deploys
+  deploymentBucket: YOUR_DEPLOYMENT_BUCKET_NAME
   serverless-layers:
     layersDeploymentBucket: ${self:custom.deploymentBucket}
   logRetentionInDays:

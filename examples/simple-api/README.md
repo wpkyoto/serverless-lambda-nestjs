@@ -1,12 +1,5 @@
 ## Example API Project 
 
-### Prepare
-If you use is directory, you need to copy base project file.
-
-```
-$ cp ../../dist src
-```
-
 ### Pre deployment for AWS
 
 Open `serverless.yml` and replace the `YOUR_DEPLOYMENT_BUCKET_NAME` props as your S3 bucket name (example: `example-nestjs-s3-bucket`).

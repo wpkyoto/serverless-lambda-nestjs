@@ -1,7 +1,7 @@
 
 import { APIGatewayProxyHandler } from 'aws-lambda';
 // import { ServerlessNestjsApplicationFactory } from 'serverless-lambda-nestjs';
-import { ServerlessNestjsApplicationFactory } from './dist';
+import { ServerlessNestjsApplicationFactory } from 'serverless-lambda-nestjs';
 // YOUR Nestjs application root module
 import { AppModule } from './app.module';
 
