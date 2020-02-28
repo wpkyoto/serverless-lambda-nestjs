@@ -4,6 +4,5 @@ node_modules/
 coverage/
 .idea/
 dist/
-examples/
 .rpt2_cache/
 yarn-error.log
