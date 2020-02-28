@@ -71,8 +71,8 @@ $ yarn run create:ogp:light
 ## Prepare
 
 ```
-$ git clone YOUR_REPO_URI
-$ cd YOUR_REPO_URI
+$ git clone git@github.com:hideokamoto/serverless-lambda-nestjs.git
+$ cd serverless-lambda-nestjs
 
 // Put your GitHub Personal Access Token
 $ mv .envrc.example .envrc

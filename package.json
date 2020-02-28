@@ -1,7 +1,7 @@
 {
   "name": "serverless-lambda-nestjs",
   "version": "0.0.0",
-  "description": "",
+  "description": "Simple wrapper for Nestjs to run in AWS Lambda",
   "main": "dist/index.js",
   "engines": {
     "node": ">=8.16.1 || ^10.13.0 || >=11.10.1"
