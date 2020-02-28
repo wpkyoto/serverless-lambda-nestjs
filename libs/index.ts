@@ -51,7 +51,7 @@ export class ServerlessNestjsApplicationFactory<T = any> {
     return serverless.createServer(expressApp)
   }
 
-  public async create (
+  public async run (
     event: APIGatewayProxyEvent | APIGatewayEvent,
     context: Context
   ) {
