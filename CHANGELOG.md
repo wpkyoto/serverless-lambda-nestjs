@@ -1,3 +1,8 @@
+<a name="0.0.2"></a>
+## [0.0.2](https://github.com/hideokamoto/serverless-lambda-nestjs/compare/v0.0.1...v0.0.2) (2020-02-28)
+
+
+
 <a name="0.0.1"></a>
 ## [0.0.1](https://github.com/hideokamoto/serverless-lambda-nestjs/compare/d69b057...v0.0.1) (2020-02-28)
 
