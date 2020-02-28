@@ -1,0 +1,63 @@
+service: serverless-nestjs-api
+
+
+custom:
+  stage:  ${opt:stage, self:provider.stage}
+  deploymentBucket: serverless.${self:provider.region}.wp-kyoto.deploys
+  serverless-layers:
+    layersDeploymentBucket: ${self:custom.deploymentBucket}
+  logRetentionInDays:
+    development: 14
+    production: 90
+    default: 3
+  memorySize:
+    development: 256
+    production: 512
+    default: 256
+  prune:
+    automatic: true
+    number: 3
+  apiGatewayTags:
+    Stage: ${self:custom.stage}
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: us-east-1
+  profile: default
+  stage: development
+  timeout: 30
+  memorySize: ${self:custom.memorySize.${self:custom.stage}, self:custom.memorySize.default}
+  deploymentBucket:
+    name: ${self:custom.deploymentBucket}
+    serverSideEncryption: AES256
+  logRetentionInDays: ${self:custom.logRetentionInDays.${self:custom.stage}, self:custom.logRetentionInDays.default}
+  environment:
+    STAGE: ${self:custom.stage}
+  tags: ${self:custom.apiGatewayTags}
+
+plugins:
+  - serverless-offline
+  - serverless-layers
+  - serverless-tag-api-gateway
+  - serverless-prune-plugin
+
+package:
+  individually: true
+  include:
+    - dist/**
+  exclude:
+    - '**'
+
+functions:
+  index:
+    handler: dist/index.handler
+    events:
+    - http:
+        cors: true
+        path: '/'
+        method: any
+    - http:
+        cors: true
+        path: '{proxy+}'
+        method: any
