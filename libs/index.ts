@@ -14,6 +14,9 @@ export type NestAplicationCallback = (
 ) => INestApplication | Promise<INestApplication>;
 const defaultCallback: NestAplicationCallback = app => app
 
+/**
+ * Wrapper class for Nestjs in AWS Lambda
+ */
 export class ServerlessNestjsApplicationFactory<T = any> {
   private readonly AppModule: T;
   private options: NestApplicationOptions;
@@ -28,16 +31,35 @@ export class ServerlessNestjsApplicationFactory<T = any> {
     this.callback = callback
   }
 
+  /**
+   * Update your nest application options
+   * @param options
+   */
   public updateOptions (options: NestApplicationOptions) {
     this.options = options
     return this
   }
 
+  /**
+   * Update callback to execute nest application
+   * @param callback
+   * @example
+   * ```
+   * const application = new ServerlessNestjsApplicationFactory(AppModule)
+   * application.updateCallback(app => {
+   *   app.enableCors()
+   * })
+   * return applicaiton.run(event, context)
+   * ```
+   */
   public updateCallback (callback: NestAplicationCallback) {
     this.callback = callback
     return this
   }
 
+  /**
+   * Just create nest js application wrapped by Express Adapter
+   */
   public async createApplication () {
     const expressApp = express()
     const adapter = new ExpressAdapter(expressApp)
@@ -51,6 +73,11 @@ export class ServerlessNestjsApplicationFactory<T = any> {
     return serverless.createServer(expressApp)
   }
 
+  /**
+   * Start Nestjs application in AWS Lambda
+   * @param event
+   * @param context
+   */
   public async run (
     event: APIGatewayProxyEvent | APIGatewayEvent,
     context: Context

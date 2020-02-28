@@ -11,7 +11,7 @@
     "tsc": "tsc",
     "test": "jest",
     "lint": "eslint 'libs/*.ts'",
-    "doc": "typedoc --out docs libs/ && touch docs/.nojekyll",
+    "doc": "compodoc -p tsconfig.json -d docs/ && touch docs/.nojekyll",
     "test:watch": "jest --watch",
     "test:dev": "jest --watch --silent=false --verbose false --coverage",
     "postversion": "npm run push:tag && npm run create:release && npm run create:changelog",
@@ -61,6 +61,7 @@
   "devDependencies": {
     "@commitlint/cli": "^8.1.0",
     "@commitlint/config-conventional": "^8.1.0",
+    "@compodoc/compodoc": "^1.1.11",
     "@types/aws-lambda": "^8.10.44",
     "@types/aws-serverless-express": "^3.3.3",
     "@types/express": "^4.17.2",
