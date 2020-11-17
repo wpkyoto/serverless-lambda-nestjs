@@ -86,7 +86,7 @@
     "ts-jest": "26.1.3",
     "tslib": "2.0.0",
     "typedoc": "0.17.8",
-    "typescript": "3.9.7"
+    "typescript": "4.0.5"
   },
   "dependencies": {
     "@nestjs/common": "^7.0.0",
