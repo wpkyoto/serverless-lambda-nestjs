@@ -2,7 +2,8 @@
 
 ## Badges
 
-[![NPM](https://nodei.co/npm/serverless-lambda-nestjs.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/serverless-lambda-nestjs/)  
+[![NPM](https://nodei.co/npm/serverless-lambda-nestjs.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/serverless-lambda-nestjs/) [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fwpkyoto%2Fserverless-lambda-nestjs.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fwpkyoto%2Fserverless-lambda-nestjs?ref=badge_shield)
+ 
 [![npm version](https://badge.fury.io/js/serverless-lambda-nestjs.svg)](https://badge.fury.io/js/serverless-lambda-nestjs)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Maintainability](https://api.codeclimate.com/v1/badges/c17851759423ce151b9e/maintainability)](https://codeclimate.com/github/hideokamoto/serverless-lambda-nestjs/maintainability)
@@ -131,3 +132,6 @@ $ yarn run build
 // Rebuild docs
 $ yarn run doc
 ```
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fwpkyoto%2Fserverless-lambda-nestjs.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fwpkyoto%2Fserverless-lambda-nestjs?ref=badge_large)
