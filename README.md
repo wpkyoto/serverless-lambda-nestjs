@@ -7,7 +7,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Maintainability](https://api.codeclimate.com/v1/badges/c17851759423ce151b9e/maintainability)](https://codeclimate.com/github/hideokamoto/serverless-lambda-nestjs/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/c17851759423ce151b9e/test_coverage)](https://codeclimate.com/github/hideokamoto/serverless-lambda-nestjs/test_coverage)
-[![Build Status](https://travis-ci.org/hideokamoto/serverless-lambda-nestjs.svg?branch=master)](https://travis-ci.org/hideokamoto/serverless-lambda-nestjs)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fwpkyoto%2Fserverless-lambda-nestjs.svg?type=small)](https://app.fossa.com/projects/git%2Bgithub.com%2Fwpkyoto%2Fserverless-lambda-nestjs?ref=badge_small)
 
 ## Usage
